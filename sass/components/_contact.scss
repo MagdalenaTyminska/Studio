@@ -1,11 +1,10 @@
 .contact {
     background-color: $color_white;
-    display: block;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin: auto;
 
     &__main {
-        display: block;
         text-align: center;
     }
 }
