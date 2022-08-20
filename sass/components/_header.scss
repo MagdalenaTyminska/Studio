@@ -1,0 +1,102 @@
+.header {
+    border-bottom: $header_border;
+    height: 80px;
+
+    &__page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__page-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 22px;
+    }
+
+    &__logo-web {
+        color: $color_blue;
+    }
+
+    &__logo-studio {
+        color: $color_black;
+    }
+
+    &__navigation ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: 254px;
+    }
+
+    &__navigation a {
+        text-decoration: none;
+        color: $color_black;
+        font-weight: 500;
+        line-height: 1.38;
+        position: relative;
+
+        & a:hover,
+        & a:focus {
+            color: $color_blue;
+            fill: $color_blue;
+            transition: color 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__navigation--stress::after {
+        content: "";
+        position: absolute;
+        background: $color_blue;
+        height: 4px;
+        border-radius: 2px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 47px;
+    }
+
+    &__contacts {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
+        padding-top: 22px;
+    }
+
+    &__contacts a {
+        display: flex;
+        align-items: center;
+    }
+
+    &__contacts-links {
+        text-decoration: none;
+        font-weight: 500;
+        color: $color_grey;
+        line-height: 1.71;
+        fill: $color_grey;
+
+        &:hover,
+        &:focus {
+            color: $color_blue;
+            fill: $color_blue;
+            transition: color 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+}
+
+#header__logo a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    margin-right: 93px;
+}
+
+.header svg {
+    margin-right: 10px;
+}

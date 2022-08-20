@@ -1,0 +1,48 @@
+.whatwedo {
+    padding-top: 0%;
+    background-color: $color_white;
+
+    &__header {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: $letter_spacing;
+        text-align: center;
+        line-height: 1.17;
+        padding-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        list-style-type: none;
+    }
+
+    &__list li {
+        position: relative;
+        flex-grow: 1;
+    }
+
+    &__figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__figure {
+        display: flex;
+        padding: 0;
+    }
+
+    &__figcaption {
+        background-color: $whatwedo_bg;
+        position: absolute;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: $letter_spacing;
+        text-transform: uppercase;
+        color: $color_white;
+        padding-top: 27px;
+        width: 100%;
+        height: 70px;
+        bottom: 0px;
+    }
+}

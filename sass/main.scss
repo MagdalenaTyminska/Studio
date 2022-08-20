@@ -1,0 +1,39 @@
+@import "utils/variables.scss";
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--black-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+@import "components/header.scss";
+@import "components/slider.scss";
+@import "components/features.scss";
+@import "components/whatwedo.scss";
+@import "components/team.scss";
+@import "components/customers.scss";
+@import "components/footer.scss";
+@import "components/portfolio.scss";
+@import "components/modal.scss";
+@import "components/contact";

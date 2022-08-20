@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Kontakt</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__page">
+                    <div class="header__page-left">
+                        <h2 id="header__logo">
+                            <a href="index.html"
+                                ><span class="header__logo-web">Web</span
+                                ><span class="header__logo-studio"
+                                    >Studio</span
+                                ></a
+                            >
+                        </h2>
+                        <nav class="header__navigation">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Agencja</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="header__navigation header__navigation--stress"
+                                        href="kontakt.html"
+                                        >Kontakt</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <ul class="header__contacts">
+                        <li>
+                            <a
+                                class="header__contacts-links"
+                                href="mailto:info@devstudio.com"
+                                ><svg width="20" height="16">
+                                    <use
+                                        href="images/icons.svg#icon-mail"
+                                    ></use>
+                                </svg>
+                                info@devstudio.com</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="header__contacts-links"
+                                href="tel:+48111111111"
+                                ><svg width="15" height="24">
+                                    <use
+                                        href="images/icons.svg#icon-smartphone"
+                                    ></use>
+                                </svg>
+                                +48111111111</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="section container contact">
+                <img
+                    class="contact__main"
+                    src="images/contact.png"
+                    alt="Work in progress"
+                />
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__page">
+                    <div class="footer__contact">
+                        <h2 id="fooder__logo">
+                            <a href="index.html"
+                                ><span class="footer__logo-web">Web</span
+                                ><span class="footer__logo-studio"
+                                    >Studio</span
+                                ></a
+                            >
+                        </h2>
+                        <address class="footer__adress">
+                            m. Warszawa, Aleje Jerozolimskie 21
+                        </address>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="tel:+48111111111">+48111111111</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__socialmedia">
+                        <p class="footer__socialmedia-title">dołącz do nas</p>
+                        <ul class="footer__socialmedia-list">
+                            <li class="footer__socialmedia-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        href="images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </li>
+                            <li class="footer__socialmedia-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        href="images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </li>
+                            <li class="footer__socialmedia-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        href="images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </li>
+                            <li class="footer__socialmedia-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        href="images/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__newsletter">
+                        <p class="footer__newsletter-title">
+                            Zapisz się do newslettera
+                        </p>
+                        <form name="footer__newsletter" autocomplete="on">
+                            <input
+                                class="footer__newsletter-email"
+                                type="email"
+                                name="newsletter-email"
+                                placeholder="E-mail"
+                                required
+                            />
+                            <input
+                                class="footer__newsletter-submit"
+                                type="submit"
+                                name="newsletter-sumbit"
+                                value="Zapisz się     "
+                            /><svg class="footer__newsletter-icon">
+                                <use href="images/icons.svg#icon-send"></use>
+                            </svg>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

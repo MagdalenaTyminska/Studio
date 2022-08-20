@@ -1,0 +1,44 @@
+.slider {
+    background: $slider_bg;
+    background-image: linear-gradient($slider_bg, $slider_bg),
+        url(/goit-markup-hw-04/images/background-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    height: 600px;
+    padding-top: 200px;
+
+    &__solution {
+        text-align: center;
+    }
+
+    &__solution-header {
+        color: $color_white;
+        font-weight: 900;
+        font-size: 44px;
+        text-align: center;
+        width: 696px;
+        height: 120px;
+        letter-spacing: $letter_spacing_big;
+        text-transform: uppercase;
+        margin: auto;
+    }
+
+    &__solution-button {
+        width: 200px;
+        height: 50px;
+        border: none;
+        background-color: $color_blue;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        text-align: center;
+        letter-spacing: $letter_spacing_big;
+        cursor: pointer;
+        color: $color_white;
+        box-shadow: $slider_shadow;
+        border-radius: 4px;
+        margin-top: 30px;
+    }
+}

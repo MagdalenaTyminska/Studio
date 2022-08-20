@@ -1,0 +1,118 @@
+.portfolio {
+    background-color: $color_white;
+
+    &__button-list {
+        list-style-type: none;
+        display: flex;
+        margin-bottom: 50px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    &__button {
+        width: 121px;
+        height: 38px;
+        border: none;
+        background-color: $portfolio_button_bg;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        color: $color_black;
+        border-radius: 4px;
+
+        &:hover,
+        &:focus {
+            color: $color_white;
+            background-color: $color_blue;
+            box-shadow: $portfolio_button_shadow;
+            border-radius: 4px;
+            transition: color 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__list figcaption {
+        background-color: $color_white;
+        border-bottom: $portfolio_figcaption_border;
+        border-right: $portfolio_figcaption_border;
+        border-left: $portfolio_figcaption_border;
+        height: 110px;
+    }
+
+    &__list figure {
+        font-size: 0;
+    }
+
+    &__figure {
+        width: 370px;
+        height: 100%;
+        margin: 0;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        &:hover,
+        &:focus {
+            box-shadow: $portfolio_figure_shadow;
+            transition: color 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 0.06em;
+        margin: 0;
+        padding-left: 24px;
+        padding-top: 20px;
+    }
+
+    &__text {
+        color: $color_grey;
+        font-size: 16px;
+        letter-spacing: $letter_spacing;
+        margin: 0;
+        padding-left: 24px;
+        padding-top: 15px;
+        height: 110px;
+    }
+
+    &__img {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__figure:hover &__overlay {
+        transform: translatey(0);
+    }
+
+    &__overlay {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $color_blue;
+        transform: translatey(100%);
+        transition: transform 250ms ease;
+        align-items: center;
+    }
+
+    &__overlay p {
+        color: $color_white;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: $letter_spacing;
+        padding: 49px 45px 49px 24px;
+    }
+}

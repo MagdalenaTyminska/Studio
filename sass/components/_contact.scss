@@ -1,0 +1,11 @@
+.contact {
+    background-color: $color_white;
+    display: block;
+    justify-content: center;
+    margin: auto;
+
+    &__main {
+        display: block;
+        text-align: center;
+    }
+}
