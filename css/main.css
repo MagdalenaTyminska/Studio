@@ -17,7 +17,7 @@ body {
   padding: 0 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 360px) {
   .container {
     max-width: 480px;
     padding: 0 15px;
@@ -27,7 +27,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 39px;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -499,9 +499,6 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
-.footer__socialmedia {
-  padding-top: 70px;
-}
 .footer__socialmedia-title {
   font-weight: 700;
   line-height: 1.14;
@@ -625,7 +622,7 @@ body {
   font-weight: 700;
 }
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 350px) and (max-width: 767px) {
   .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -703,6 +700,49 @@ body {
     left: 62%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    padding: 60px 0;
+  }
+  .footer__page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 60px;
+  }
+  .footer__newsletter-icon {
+    bottom: 26%;
+    left: 91%;
+  }
+  .footer__newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer__newsletter form {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 @media (min-width: 1200px) {
   .footer {
     width: 100%;
@@ -725,6 +765,7 @@ body {
   }
   .footer__socialmedia {
     padding-left: 70px;
+    padding-top: 70px;
   }
   .footer__newsletter {
     padding-left: 70px;
