@@ -239,6 +239,17 @@
         &__newsletter form {
             text-align: center;
             flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+
+        &__newsletter-submit {
+            margin-top: 20px;
+        }
+
+        &__newsletter-icon {
+            bottom: 11%;
+            left: 65%;
         }
     }
 }

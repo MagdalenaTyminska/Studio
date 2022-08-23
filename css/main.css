@@ -13,27 +13,24 @@ body {
 }
 
 .container {
-  width: 100%;
+  max-width: 480px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 39px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 0 15px;
   }
 }
 .ul {
@@ -741,6 +738,19 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__newsletter-submit {
+    margin-top: 20px;
+  }
+  .footer__newsletter-icon {
+    bottom: 11%;
+    left: 65%;
   }
 }
 @media (min-width: 1200px) {
