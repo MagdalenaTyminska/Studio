@@ -665,6 +665,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 60px;
   }
   .footer__socialmedia-title {
     -webkit-box-pack: center;
@@ -685,7 +686,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .footer__newsletter form {
     text-align: center;
