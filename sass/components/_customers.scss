@@ -2,7 +2,7 @@
     background-color: $color_white;
 
     &__header {
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 700;
         letter-spacing: $letter_spacing;
         text-align: center;
@@ -39,43 +39,24 @@
 
 @media only screen and (min-width: 350px) and (max-width: 767px) {
     .customers {
-        &__header {
-            font-size: 26px;
+        &__list {
+            justify-content: space-around;
         }
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .customers {
+        &__list {
+            justify-content: space-around;
+        }
+    }
 }
+
 @media (min-width: 1200px) {
     .customers {
         &__header {
             font-size: 36px;
-        }
-
-        &__list {
-            display: flex;
-            gap: 30px;
-        }
-
-        &__item {
-            width: 170px;
-            height: 92px;
-            border: $border;
-            border-radius: 4px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            fill: $svg_grey_fill;
-
-            &:hover,
-            &:focus {
-                fill: $color_blue;
-                border-color: $color_blue;
-                transition: color 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            }
         }
     }
 }
