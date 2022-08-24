@@ -1,3 +1,10 @@
+@media (min-width: 1200px) {
+    .mobile-header {
+        display: flex;
+        display: none;
+    }
+}
+
 .header {
     border-bottom: $header_border;
     height: 80px;
@@ -99,4 +106,10 @@
 
 .header svg {
     margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .mobile-header {
+        display: none;
+    }
 }
