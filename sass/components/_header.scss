@@ -4,6 +4,14 @@
     &__page {
         display: none;
     }
+
+    &__logo-web {
+        color: $color_blue;
+    }
+
+    &__logo-studio {
+        color: $color_black;
+    }
 }
 
 #header__logo a {
@@ -15,7 +23,7 @@
     margin-right: 93px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .header {
         height: 80px;
 
@@ -23,6 +31,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 15px;
         }
 
         &__page-left {
@@ -31,14 +40,6 @@
             justify-content: space-between;
             align-items: center;
             padding-top: 22px;
-        }
-
-        &__logo-web {
-            color: $color_blue;
-        }
-
-        &__logo-studio {
-            color: $color_black;
         }
 
         &__navigation ul {
@@ -79,8 +80,7 @@
         &__contacts {
             list-style-type: none;
             display: flex;
-            gap: 50px;
-            padding-top: 22px;
+            flex-direction: column;
         }
 
         &__contacts a {
@@ -105,7 +105,44 @@
         }
     }
 
+    #header__logo a {
+        text-decoration: none;
+        font-family: "Raleway", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.38;
+        margin-right: 93px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        &__page {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+
+        &__contacts {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            padding-top: 22px;
+        }
+    }
+
     .header svg {
         margin-right: 10px;
+    }
+
+    #header__logo a {
+        text-decoration: none;
+        font-family: "Raleway", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.38;
+        margin-right: 93px;
     }
 }
