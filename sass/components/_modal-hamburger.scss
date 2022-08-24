@@ -16,11 +16,11 @@
     cursor: pointer;
     border: none;
     outline: none;
-    color: $blackColor;
+    color: $color_black;
 
     &:hover,
     &:active {
-        color: $accentColor;
+        color: $color_blue;
         background-color: transparent;
     }
 }
@@ -33,7 +33,7 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    background-color: $whiteColor;
+    background-color: $color_white;
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -47,12 +47,12 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    color: $blackColor;
+    color: $color_black;
 }
 
 .menu-container .menu-toggle:hover,
 .menu-container .menu-toggle:active {
-    color: $accentColor;
+    color: $color_blue;
 }
 
 .mobile-menu {
@@ -60,7 +60,7 @@
 
     &__link {
         display: block;
-        color: $blackColor;
+        color: $color_black;
         text-decoration: none;
         font-weight: 500;
         font-size: 40px;
@@ -71,7 +71,7 @@
         &:hover,
         &:focus,
         &:active {
-            color: $accentColor;
+            color: $color_blue;
         }
     }
 
@@ -80,14 +80,14 @@
 
         &__link {
             text-decoration: none;
-            color: $descriptionColor;
+            color: $color_grey;
             font-weight: 500;
             letter-spacing: 0.02em;
 
             &:hover,
             &:focus,
             &:active {
-                color: $accentColor;
+                color: $color_blue;
             }
         }
 
@@ -117,8 +117,8 @@
             font-size: 18px;
             line-height: 1.222;
             letter-spacing: 0.02em;
-            color: $accentColor;
-            border-right: $mobileMenuBorderSocials;
+            color: $color_blue;
+            border-right: 4px;
         }
     }
 }

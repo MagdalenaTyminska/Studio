@@ -14,10 +14,11 @@
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     &__item {
-        width: 170px;
+        width: 200px;
         height: 92px;
         border: $border;
         border-radius: 4px;
@@ -37,18 +38,10 @@
     }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 767px) {
-    .customers {
-        &__list {
-            justify-content: space-around;
-        }
-    }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .customers {
-        &__list {
-            justify-content: space-around;
+        &__item {
+            width: 226px;
         }
     }
 }
@@ -57,6 +50,16 @@
     .customers {
         &__header {
             font-size: 36px;
+        }
+        &__item {
+            width: 170px;
+        }
+
+        &__list {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
     }
 }

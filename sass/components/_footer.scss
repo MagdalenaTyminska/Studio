@@ -1,9 +1,23 @@
 .footer {
     background-color: $footer_bg;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    text-align: center;
+
+    &__page {
+        flex-direction: row;
+        justify-content: center;
+    }
 
     &__contact {
         display: flex;
         flex-direction: column;
+    }
+
+    &__logo {
+        justify-content: center;
+        flex-direction: row;
     }
 
     &__logo-web {
@@ -22,6 +36,7 @@
         font-style: normal;
         padding-bottom: 9px;
         padding-top: 20px;
+        justify-content: center;
     }
 
     &__list {
@@ -53,18 +68,26 @@
         font-size: 14px;
     }
 
+    &__socialmedia {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+    }
+
     &__socialmedia-title {
         font-weight: 700;
         line-height: 1.14;
         letter-spacing: $letter_spacing;
         text-transform: uppercase;
         color: $color_white;
+        justify-content: center;
     }
 
     &__socialmedia-list {
         display: flex;
         padding-top: 20px;
         gap: 10px;
+        justify-content: center;
     }
 
     &__socialmedia-item {
@@ -86,6 +109,13 @@
         }
     }
 
+    &__newsletter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+    }
+
     &__newsletter-title {
         font-weight: 700;
         line-height: 1.14;
@@ -97,6 +127,8 @@
 
     &__newsletter form {
         position: relative;
+        text-align: center;
+        flex-direction: column;
     }
 
     &__newsletter-email {
@@ -109,6 +141,7 @@
         box-shadow: $footer_shadow;
         border-radius: 4px;
         transition: transform 250ms ease-in, box-shadow 250ms ease-in;
+        margin-bottom: 20px;
 
         &::placeholder {
             color: $footer_placeholder;
@@ -142,6 +175,8 @@
         height: 24px;
         fill: $color_white;
         transition: transform 1000ms ease-out;
+        bottom: 15px;
+        right: 145px;
     }
 
     &__newsletter-submit:hover + &__newsletter-icon {
@@ -156,64 +191,6 @@
     font-weight: 700;
 }
 
-@media only screen and (min-width: 350px) and (max-width: 767px) {
-    .footer {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        display: flex;
-        text-align: center;
-
-        &__page {
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        &__logo {
-            justify-content: center;
-            flex-direction: row;
-        }
-
-        &__adress {
-            justify-content: center;
-        }
-
-        &__socialmedia {
-            display: flex;
-            flex-direction: column;
-            margin-top: 60px;
-        }
-
-        &__socialmedia-title {
-            justify-content: center;
-        }
-
-        &__socialmedia-list {
-            justify-content: center;
-        }
-
-        &__newsletter {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        &__newsletter form {
-            text-align: center;
-            flex-direction: column;
-        }
-
-        &__newsletter-email {
-            margin-bottom: 20px;
-        }
-
-        &__newsletter-icon {
-            bottom: 11%;
-            left: 62%;
-        }
-    }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .footer {
         padding: 60px 0;
@@ -225,20 +202,12 @@
             justify-content: space-around;
             gap: 60px;
         }
-        &__newsletter-icon {
-            bottom: 26%;
-            left: 91%;
-        }
 
         &__newsletter {
             display: flex;
-            flex-direction: column;
-            text-align: center;
         }
 
         &__newsletter form {
-            text-align: center;
-            flex-direction: column;
             display: flex;
             align-items: center;
         }
@@ -246,10 +215,9 @@
         &__newsletter-submit {
             margin-top: 20px;
         }
-
         &__newsletter-icon {
-            bottom: 11%;
-            left: 65%;
+            bottom: 15px;
+            left: 235px;
         }
     }
 }
@@ -258,6 +226,9 @@
     .footer {
         width: 100%;
         height: 252px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: left;
 
         &__page {
             display: flex;
@@ -271,23 +242,29 @@
         }
 
         &__socialmedia {
-            padding-top: 70px;
             margin-left: 70px;
+            padding-top: 70px;
+        }
+
+        &__socialmedia-list {
+            padding-top: 25px;
         }
 
         &__newsletter {
             margin-left: 70px;
             padding-top: 70px;
+            text-align: left;
         }
 
         &__newsletter form {
             display: inline-flex;
             gap: 24px;
+            flex-direction: row;
         }
 
         &__newsletter-icon {
-            right: 4%;
-            top: 26%;
+            right: 20px;
+            top: 10px;
         }
     }
 }

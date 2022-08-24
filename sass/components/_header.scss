@@ -1,14 +1,18 @@
 .header {
+    height: 60px;
     border-bottom: $header_border;
+    &__page {
+        display: none;
+    }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 767px) {
-    .header {
-        height: 60px;
-        &__page {
-            display: none;
-        }
-    }
+#header__logo a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    margin-right: 93px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -99,15 +103,6 @@
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
         }
-    }
-
-    #header__logo a {
-        text-decoration: none;
-        font-family: "Raleway", sans-serif;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.38;
-        margin-right: 93px;
     }
 
     .header svg {

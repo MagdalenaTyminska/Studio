@@ -1,7 +1,7 @@
 @import "utils/variables.scss";
 body {
     font-family: "Roboto", sans-serif;
-    color: var(--black-color);
+    color: $color_black;
 }
 
 *,
@@ -18,21 +18,15 @@ body {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 350px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
     .container {
-        max-width: 480px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .container {
-        max-width: 768px;
+        min-width: 768px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1200px;
+        min-width: 1200px;
     }
 }
 
@@ -58,4 +52,3 @@ body {
 @import "components/modal.scss";
 @import "components/contact";
 @import "components/modal-hamburger";
-
