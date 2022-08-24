@@ -1,6 +1,18 @@
+.header {
+    border-bottom: $header_border;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
+    .header {
+        height: 60px;
+        &__page {
+            display: none;
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .header {
-        border-bottom: $header_border;
         height: 80px;
 
         &__page {
