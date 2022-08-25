@@ -158,6 +158,7 @@
         line-height: 1.714;
         letter-spacing: $letter_spacing;
         color: $color_grey;
+        flex-wrap: wrap;
 
         &::before {
             content: "";

@@ -1278,6 +1278,8 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .modal__form-agreement::before {
   content: "";
