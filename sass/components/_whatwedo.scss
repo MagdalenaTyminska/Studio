@@ -1,10 +1,10 @@
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .whatwedo {
         display: none;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .whatwedo {
         display: none;
     }
@@ -14,6 +14,7 @@
     .whatwedo {
         padding-top: 0%;
         background-color: $color_white;
+        display: flex;
 
         &__header {
             font-size: 36px;
