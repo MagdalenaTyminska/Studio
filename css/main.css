@@ -1296,6 +1296,8 @@ body {
   letter-spacing: 0.03em;
   padding-left: 4px;
   padding-right: 4px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .modal__form-box {
   display: -webkit-box;

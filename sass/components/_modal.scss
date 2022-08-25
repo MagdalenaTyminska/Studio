@@ -177,6 +177,7 @@
         letter-spacing: $letter_spacing;
         padding-left: 4px;
         padding-right: 4px;
+        flex-wrap: wrap;
     }
 
     &__form-box {
