@@ -1,17 +1,18 @@
 .portfolio {
     background-color: $color_white;
+    padding-top: 60px;
 
     &__button-list {
         list-style-type: none;
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 50px;
-        gap: 10px;
-        justify-content: center;
+        gap: 8px;
+        margin-left: 15px;
     }
 
     &__button {
-        width: 121px;
-        height: 38px;
+        padding: 8px 25px;
         border: none;
         background-color: $portfolio_button_bg;
         font-weight: 500;
@@ -37,6 +38,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+        justify-content: center;
     }
 
     &__list figcaption {
@@ -114,5 +116,21 @@
         line-height: 1.55;
         letter-spacing: $letter_spacing;
         padding: 49px 45px 49px 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        &__button-list {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio {
+        &__button-list {
+            justify-content: center;
+        }
     }
 }

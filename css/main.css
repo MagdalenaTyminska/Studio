@@ -905,21 +905,21 @@ body {
 }
 .portfolio {
   background-color: #ffffff;
+  padding-top: 60px;
 }
 .portfolio__button-list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 50px;
-  gap: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  gap: 8px;
+  margin-left: 15px;
 }
 .portfolio__button {
-  width: 121px;
-  height: 38px;
+  padding: 8px 25px;
   border: none;
   background-color: #f5f4fa;
   font-weight: 500;
@@ -948,6 +948,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .portfolio__list figcaption {
   background-color: #ffffff;
@@ -1028,6 +1031,20 @@ body {
   padding: 49px 45px 49px 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;
