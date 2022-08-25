@@ -303,7 +303,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+  max-width: 450px;
 }
 .features__svg {
   display: -webkit-box;
@@ -343,6 +346,17 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .features__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    max-width: none;
+  }
+  .features__svg {
+    width: 100%;
+    height: 120px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .whatwedo {
     display: none;
