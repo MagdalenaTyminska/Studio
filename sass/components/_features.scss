@@ -43,6 +43,14 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .features {
+        &__list {
+            max-width: 529px;
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .features {
         &__list {
