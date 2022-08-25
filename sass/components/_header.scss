@@ -1,8 +1,9 @@
 .header {
     height: 60px;
     border-bottom: $header_border;
+
     &__page {
-        display: none;
+        margin: 15px;
     }
 
     &__logo-web {
@@ -11,6 +12,14 @@
 
     &__logo-studio {
         color: $color_black;
+    }
+
+    &__navigation {
+        display: none;
+    }
+
+    &__contacts {
+        display: none;
     }
 }
 
@@ -31,7 +40,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 15px;
         }
 
         &__page-left {
@@ -40,6 +48,10 @@
             justify-content: space-between;
             align-items: center;
             padding-top: 22px;
+        }
+
+        &__navigation {
+            display: flex;
         }
 
         &__navigation ul {
@@ -74,7 +86,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            top: 47px;
+            top: 50px;
         }
 
         &__contacts {
@@ -113,6 +125,10 @@
         line-height: 1.38;
         margin-right: 93px;
     }
+
+    .header svg {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -122,6 +138,18 @@
             justify-content: space-between;
             align-items: center;
             margin: auto;
+        }
+
+        &__navigation--stress::after {
+            content: "";
+            position: absolute;
+            background: $color_blue;
+            height: 4px;
+            border-radius: 2px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 47px;
         }
 
         &__contacts {

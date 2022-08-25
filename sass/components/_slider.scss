@@ -1,13 +1,20 @@
 .slider {
     background: $slider_bg;
     background-image: linear-gradient($slider_bg, $slider_bg),
-        url(/goit-markup-hw-04/images/background-image.jpg);
-    background-position: center;
+        url(../images/background-image-mobile.jpg);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .slider {
+            background-image: url(../images/background-image-mobile@2x.jpg);
+        }
+    }
+
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
-    height: 400px;
-    padding-top: 200px;
+    padding-top: 118px;
 
     &__solution {
         text-align: center;
@@ -15,19 +22,13 @@
 
     &__solution-header {
         color: $color_white;
-        font-weight: 900;
+        font-weight: 700;
         font-size: 26px;
-        text-align: center;
-        width: 696px;
-        height: 120px;
         letter-spacing: $letter_spacing_big;
         text-transform: uppercase;
-        margin: auto;
     }
 
     &__solution-button {
-        width: 200px;
-        height: 50px;
         border: none;
         background-color: $color_blue;
         font-weight: 700;
@@ -40,21 +41,45 @@
         box-shadow: $slider_shadow;
         border-radius: 4px;
         margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 42px;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .slider {
-        &__solution-header {
-            font-size: 42px;
+        background-image: linear-gradient($slider_bg, $slider_bg),
+            url(../images/background-image-tablet.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .slider {
+                background-image: url(../images/background-image-tablet@2x.jpg);
+            }
         }
+
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .slider {
-        height: 600px;
+        background-image: linear-gradient($slider_bg, $slider_bg),
+            url(../images/background-image.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .slider {
+                background-image: url(../images/background-image@2x.jpg);
+            }
+        }
+
         &__solution-header {
+            font-weight: 900;
             font-size: 44px;
         }
     }
