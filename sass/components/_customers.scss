@@ -1,5 +1,7 @@
 .customers {
     background-color: $color_white;
+    display: flex;
+    justify-content: center;
 
     &__header {
         font-size: 28px;
@@ -38,21 +40,22 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .customers {
+        margin: auto;
         &__item {
-            width: 226px;
+            max-width: 226px;
         }
     }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .customers {
         &__header {
             font-size: 36px;
         }
         &__item {
-            width: 170px;
+            max-width: 170px;
         }
 
         &__list {
