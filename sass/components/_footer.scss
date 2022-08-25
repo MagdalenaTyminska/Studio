@@ -212,9 +212,14 @@
             align-items: center;
         }
 
+        &__newsletter-email {
+            max-width: 450px;
+        }
+
         &__newsletter-submit {
             margin-top: 20px;
         }
+
         &__newsletter-icon {
             bottom: 15px;
             left: 235px;
@@ -254,6 +259,10 @@
             margin-left: 70px;
             padding-top: 70px;
             text-align: left;
+        }
+
+        &__newsletter-email {
+            max-width: 358px;
         }
 
         &__newsletter form {

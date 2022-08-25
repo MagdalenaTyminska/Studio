@@ -8,7 +8,6 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        max-width: 450px;
     }
 
     &__svg {
@@ -47,13 +46,9 @@
 
 @media screen and (min-width: 768px) {
     .features {
-        &__list {
-            max-width: 529px;
-        }
-
         &__list li {
             flex-grow: 1;
-            flex-basis: 30%;
+            flex-basis: calc(50% - 15px);
         }
     }
 }
