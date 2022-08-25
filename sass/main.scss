@@ -23,10 +23,27 @@ body {
     padding-top: 94px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 767px;
+        margin: 15px;
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin: auto;
+        max-width: 1199px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1600px;
+        margin: auto;
+    }
+}
+
 @import "components/header.scss";
 @import "components/slider.scss";
 @import "components/features.scss";
