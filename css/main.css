@@ -830,7 +830,7 @@ body {
           flex-direction: column;
 }
 .footer__newsletter-email {
-  width: 358px;
+  max-width: 358px;
   height: 50px;
   padding-left: 22px;
   background-color: #2f303a;
@@ -944,6 +944,7 @@ body {
     max-width: 450px;
   }
   .footer__newsletter-submit {
+    max-width: 450px;
     margin-top: 20px;
   }
   .footer__newsletter-icon {
