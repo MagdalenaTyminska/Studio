@@ -3,7 +3,7 @@
     border-bottom: $header_border;
 
     &__page {
-        margin: 15px;
+        display: none;
     }
 
     &__logo-web {
@@ -12,14 +12,6 @@
 
     &__logo-studio {
         color: $color_black;
-    }
-
-    &__navigation {
-        display: none;
-    }
-
-    &__contacts {
-        display: none;
     }
 }
 
@@ -40,6 +32,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 15px;
         }
 
         &__page-left {
