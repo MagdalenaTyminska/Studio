@@ -1414,6 +1414,9 @@ body {
   .mobile-header {
     display: none;
   }
+  #mobile-menu {
+    display: none;
+  }
 }
 .mobile-header {
   display: -webkit-box;
