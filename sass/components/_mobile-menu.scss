@@ -115,8 +115,8 @@
         padding: 0;
 
         &__link {
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
             text-decoration: none;
             font-weight: 500;
             font-size: 18px;
@@ -126,8 +126,8 @@
             border-right: 1px solid rgba(33, 33, 33, 0.2);
         }
     }
+}
 
-    &-socials li:nth-chlid(1) > a {
-        padding-left: 0;
-    }
+.mobile-menu-socials li:nth-child(1) > a {
+    padding-left: 0;
 }
