@@ -1,6 +1,8 @@
 @media (min-width: 768px) {
-    .mobile-header {
-        display: none;
+    .header {
+        .mobile-header {
+            display: none;
+        }
     }
 
     #mobile-menu {

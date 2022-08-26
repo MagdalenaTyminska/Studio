@@ -1411,7 +1411,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .mobile-header {
+  .header .mobile-header {
     display: none;
   }
   #mobile-menu {
