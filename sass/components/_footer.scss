@@ -2,12 +2,14 @@
     background-color: $footer_bg;
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
-    text-align: center;
 
     &__page {
-        flex-direction: row;
-        justify-content: center;
+        text-align: center;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.7;
+        vertical-align: top;
+        margin-top: 20px;
     }
 
     &__contact {
@@ -68,24 +70,20 @@
         font-size: 14px;
     }
 
-    &__socialmedia {
-        display: flex;
-        flex-direction: column;
-        padding-top: 60px;
-    }
-
     &__socialmedia-title {
         font-weight: 700;
         line-height: 1.14;
         letter-spacing: $letter_spacing;
         text-transform: uppercase;
         color: $color_white;
-        justify-content: center;
+        text-align: center;
+        display: block;
+        padding-bottom: 20px;
+        padding-top: 60px;
     }
 
     &__socialmedia-list {
         display: flex;
-        padding-top: 20px;
         gap: 10px;
         justify-content: center;
     }
@@ -93,7 +91,7 @@
     &__socialmedia-item {
         width: 44px;
         height: 44px;
-        display: inline-flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50px;
@@ -106,14 +104,8 @@
             background-color: $color_blue;
             transition: color 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3) inset;
         }
-    }
-
-    &__newsletter {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-top: 60px;
     }
 
     &__newsletter-title {
@@ -123,16 +115,13 @@
         text-transform: uppercase;
         color: $color_white;
         padding-bottom: 20px;
-    }
-
-    &__newsletter form {
-        position: relative;
         text-align: center;
-        flex-direction: column;
+        display: block;
+        padding-top: 60px;
     }
 
     &__newsletter-email {
-        max-width: 358px;
+        max-width: 450px;
         height: 50px;
         padding-left: 22px;
         background-color: $footer_bg;
@@ -141,10 +130,10 @@
         box-shadow: $footer_shadow;
         border-radius: 4px;
         transition: transform 250ms ease-in, box-shadow 250ms ease-in;
-        margin-bottom: 20px;
 
         &::placeholder {
             color: $footer_placeholder;
+            font-size: 16px;
         }
 
         &:focus {
@@ -154,32 +143,33 @@
         }
     }
 
-    &__newsletter-submit {
-        width: 200px;
-        height: 50px;
+    &__newsletter-button {
+        padding: 10px 20px 10px 42px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
         background-color: $color_blue;
         border: none;
         border-radius: 4px;
         color: $color_white;
         font-weight: 700;
         font-size: 16px;
-        text-align: center;
+        display: flex;
+        align-items: center;
         letter-spacing: $letter_spacing_big;
         transition: transform 750ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
         cursor: pointer;
     }
 
     &__newsletter-icon {
-        position: absolute;
         width: 24px;
         height: 24px;
+        margin-left: 15px;
         fill: $color_white;
         transition: transform 1000ms ease-out;
-        bottom: 15px;
-        right: 145px;
     }
 
-    &__newsletter-submit:hover + &__newsletter-icon {
+    &__newsletter-button:hover &__newsletter-icon {
         transform: translate(20px, -10px) scale(0.9);
     }
 }
@@ -191,13 +181,11 @@
     font-weight: 700;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
     .footer {
-        padding: 60px 0;
         &__page {
             display: flex;
             flex-wrap: wrap;
-            flex-direction: row;
             align-items: baseline;
             justify-content: space-around;
             gap: 60px;
@@ -209,14 +197,13 @@
 
         &__newsletter form {
             display: flex;
-            align-items: center;
         }
 
         &__newsletter-email {
             max-width: 450px;
         }
 
-        &__newsletter-submit {
+        &__newsletter-button {
             max-width: 450px;
             margin-top: 20px;
         }
@@ -228,28 +215,31 @@
     }
 }
 
+@media screen and (max-width: 1119px) {
+    .footer {
+        &__newsletter-button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
 @media (min-width: 1200px) {
     .footer {
-        width: 100%;
-        height: 252px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        text-align: left;
-
         &__page {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         &__contact {
             padding-top: 60px;
-            margin: auto;
             display: flex;
             flex-direction: column;
         }
 
         &__socialmedia {
-            margin-left: 70px;
-            padding-top: 70px;
+            padding-left: 50px;
         }
 
         &__socialmedia-list {
@@ -258,7 +248,7 @@
 
         &__newsletter {
             margin-left: 70px;
-            padding-top: 70px;
+
             text-align: left;
         }
 
