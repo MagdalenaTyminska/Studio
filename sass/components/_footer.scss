@@ -186,31 +186,31 @@
         &__page {
             display: flex;
             flex-wrap: wrap;
-            align-items: baseline;
-            justify-content: space-around;
-            gap: 60px;
+            justify-content: center;
+        }
+
+        &__contact {
+            width: calc((100vw - 30px) / 2);
+            max-width: 529px;
+        }
+
+        &__socialmedia {
+            width: calc((100vw - 30px) / 2);
+            max-width: 529px;
+        }
+
+        &__socialmedia-title {
+            padding-top: 10px;
         }
 
         &__newsletter {
+            width: calc((100vw - 30px) / 2);
+            max-width: 529px;
+        }
+
+        &__newsletter-form {
             display: flex;
-        }
-
-        &__newsletter form {
-            display: flex;
-        }
-
-        &__newsletter-email {
-            max-width: 450px;
-        }
-
-        &__newsletter-button {
-            max-width: 450px;
-            margin-top: 20px;
-        }
-
-        &__newsletter-icon {
-            bottom: 15px;
-            left: 235px;
+            flex-direction: row;
         }
     }
 }
@@ -227,44 +227,41 @@
 @media (min-width: 1200px) {
     .footer {
         &__page {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
         }
 
         &__contact {
-            padding-top: 60px;
-            display: flex;
-            flex-direction: column;
+            text-align: left;
+            width: auto;
         }
 
         &__socialmedia {
-            padding-left: 50px;
+            width: auto;
+            text-align: left;
+        }
+
+        &__socialmedia-title {
+            padding-top: 12px;
+            text-align: left;
         }
 
         &__socialmedia-list {
-            padding-top: 25px;
+            justify-content: start;
         }
 
         &__newsletter {
-            margin-left: 70px;
-
+            width: auto;
             text-align: left;
+        }
+
+        &__newsletter-title {
+            text-align: left;
+            padding-top: 12px;
         }
 
         &__newsletter-email {
             max-width: 358px;
-        }
-
-        &__newsletter form {
-            display: inline-flex;
-            gap: 24px;
-            flex-direction: row;
-        }
-
-        &__newsletter-icon {
-            right: 20px;
-            top: 10px;
         }
     }
 }
