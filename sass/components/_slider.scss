@@ -6,9 +6,7 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        .slider {
-            background-image: url(../images/background-image-mobile@2x.jpg);
-        }
+        background-image: url(../images/background-image-mobile@2x.jpg);
     }
 
     background-position: 50% 50%;

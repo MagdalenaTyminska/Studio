@@ -257,7 +257,7 @@ body {
   padding-top: 118px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .slider .slider {
+  .slider {
     background-image: url(../images/background-image-mobile@2x.jpg);
   }
 }
@@ -1422,7 +1422,7 @@ body {
   .header .mobile-header {
     display: none;
   }
-  #mobile-menu {
+  .js-menu-container {
     display: none;
   }
 }
@@ -1466,6 +1466,7 @@ body {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  list-style: none;
 }
 
 .menu-container.is-open {
