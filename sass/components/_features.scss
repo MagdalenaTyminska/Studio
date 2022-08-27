@@ -8,6 +8,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+        max-width: 450px;
     }
 
     &__svg {
@@ -32,6 +33,7 @@
         line-height: 1.1;
         text-transform: uppercase;
         margin: 0;
+        text-align: center;
     }
 
     &__text {
@@ -46,6 +48,10 @@
 
 @media screen and (min-width: 768px) {
     .features {
+        &__list {
+            max-width: none;
+        }
+
         &__list li {
             flex-grow: 1;
             flex-basis: calc(50% - 15px);
@@ -57,7 +63,6 @@
     .features {
         &__list {
             flex-wrap: nowrap;
-            max-width: none;
         }
 
         &__svg {

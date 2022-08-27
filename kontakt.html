@@ -106,10 +106,9 @@
         <main>
             <div class="section contact">
                 <img
+                    class="contact_img"
                     src="images/contact.png"
                     alt="Work in progress"
-                    width="340"
-                    height="340"
                     srcset="
                         images/contact.png 1x,
                         images/contact.png 2x,
@@ -205,8 +204,8 @@
                 </div>
             </div>
         </footer>
-        <div class="menu-container" id="mobile-menu">
-            <button type="" class="menu-toggle">
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-toggle js-close-menu">
                 <svg
                     fill="currentColor"
                     viewBox="0 0 20 20"
@@ -232,7 +231,11 @@
                     >
                 </li>
                 <li>
-                    <a href="kontakt.html" class="mobile-menu__link">Kontakt</a>
+                    <a
+                        href="kontakt.html"
+                        class="mobile-menu__link reset-padding-bottom"
+                        >Kontakt</a
+                    >
                 </li>
             </ul>
 
@@ -257,7 +260,11 @@
 
             <ul class="mobile-menu mobile-menu-socials">
                 <li>
-                    <a href="#" class="mobile-menu-socials__link">Instagram</a>
+                    <a
+                        href="#"
+                        class="mobile-menu-socials__link reset-padding-left"
+                        >Instagram</a
+                    >
                 </li>
                 <li>
                     <a href="#" class="mobile-menu-socials__link">Twitter</a>
@@ -266,12 +273,14 @@
                     <a href="#" class="mobile-menu-socials__link">Facebook</a>
                 </li>
                 <li>
-                    <a href="#" class="mobile-menu-socials__link reset-border"
+                    <a
+                        href="#"
+                        class="mobile-menu-socials__link reset-padding-right reset-border"
                         >LinkedIn</a
                     >
                 </li>
             </ul>
         </div>
-        <script defer src="js/mobile-menu.js"></script>
+        <script src="js/mobile-menu.js"></script>
     </body>
 </html>

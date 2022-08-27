@@ -1,6 +1,13 @@
 .contact {
     background-color: $color_white;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    min-width: 200px;
+    margin: auto;
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 }
