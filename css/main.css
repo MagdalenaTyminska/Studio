@@ -808,8 +808,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__newsletter-email {
+  width: 100%;
   max-width: 450px;
   height: 50px;
   padding-left: 22px;
@@ -850,10 +854,12 @@ body {
   border-color: #2196f3;
 }
 .footer__newsletter-button {
+  width: 100%;
   max-width: 200px;
   height: 50px;
-  padding-right: 23px;
-  padding-left: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -887,8 +893,8 @@ body {
   transition: transform 1000ms ease-out, -webkit-transform 1000ms ease-out;
 }
 .footer__newsletter-button:hover .footer__newsletter-icon {
-  -webkit-transform: translate(20px, -10px) scale(0.9);
-          transform: translate(20px, -10px) scale(0.9);
+  -webkit-transform: translate(35px, -10px) scale(0.9);
+          transform: translate(35px, -10px) scale(0.9);
 }
 
 #fooder__logo a {
@@ -993,6 +999,10 @@ body {
   }
   .footer__newsletter-icon {
     margin-left: 27px;
+  }
+  .footer__newsletter-button:hover .footer__newsletter-icon {
+    -webkit-transform: translate(20px, -10px) scale(0.9);
+            transform: translate(20px, -10px) scale(0.9);
   }
 }
 .portfolio {
