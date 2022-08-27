@@ -191,7 +191,7 @@
     font-weight: 700;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .footer {
         &__page {
             display: flex;

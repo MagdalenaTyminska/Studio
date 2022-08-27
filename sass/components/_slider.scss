@@ -45,7 +45,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .slider {
         background-image: linear-gradient($slider_bg, $slider_bg),
             url(../images/background-image-tablet.jpg);
