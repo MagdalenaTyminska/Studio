@@ -1400,6 +1400,7 @@ body {
           justify-content: center;
   min-width: 200px;
   margin: auto;
+  height: 60vh;
 }
 .contact__img {
   display: block;
