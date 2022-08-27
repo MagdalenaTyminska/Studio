@@ -120,6 +120,11 @@
         padding-top: 60px;
     }
 
+    &__newsletter-form {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__newsletter-email {
         max-width: 450px;
         height: 50px;
@@ -144,7 +149,10 @@
     }
 
     &__newsletter-button {
-        padding: 10px 20px 10px 42px;
+        max-width: 200px;
+        height: 50px;
+        padding-right: 23px;
+        padding-left: 30px;
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -164,7 +172,7 @@
     &__newsletter-icon {
         width: 24px;
         height: 24px;
-        margin-left: 15px;
+        margin-left: 20px;
         fill: $color_white;
         transition: transform 1000ms ease-out;
     }
@@ -210,16 +218,12 @@
 
         &__newsletter-form {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            justify-content: center;
         }
-    }
-}
 
-@media screen and (max-width: 1119px) {
-    .footer {
         &__newsletter-button {
-            margin-left: auto;
-            margin-right: auto;
+            height: 50px;
         }
     }
 }
@@ -260,8 +264,24 @@
             padding-top: 12px;
         }
 
+        &__newsletter-form {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+        }
+
         &__newsletter-email {
-            max-width: 358px;
+            width: 358px;
+        }
+
+        &__newsletter-button {
+            width: 200px;
+            height: 50px;
+            margin-top: 0;
+        }
+
+        &__newsletter-icon {
+            margin-left: 27px;
         }
     }
 }

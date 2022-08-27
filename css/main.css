@@ -795,6 +795,15 @@ body {
   display: block;
   padding-top: 60px;
 }
+.footer__newsletter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .footer__newsletter-email {
   max-width: 450px;
   height: 50px;
@@ -836,7 +845,10 @@ body {
   border-color: #2196f3;
 }
 .footer__newsletter-button {
-  padding: 10px 20px 10px 42px;
+  max-width: 200px;
+  height: 50px;
+  padding-right: 23px;
+  padding-left: 30px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -862,7 +874,7 @@ body {
 .footer__newsletter-icon {
   width: 24px;
   height: 24px;
-  margin-left: 15px;
+  margin-left: 20px;
   fill: #ffffff;
   -webkit-transition: -webkit-transform 1000ms ease-out;
   transition: -webkit-transform 1000ms ease-out;
@@ -911,16 +923,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-}
-@media screen and (max-width: 1119px) {
   .footer__newsletter-button {
-    margin-left: auto;
-    margin-right: auto;
+    height: 50px;
   }
 }
 @media (min-width: 1200px) {
@@ -956,8 +968,26 @@ body {
     text-align: left;
     padding-top: 12px;
   }
+  .footer__newsletter-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
   .footer__newsletter-email {
-    max-width: 358px;
+    width: 358px;
+  }
+  .footer__newsletter-button {
+    width: 200px;
+    height: 50px;
+    margin-top: 0;
+  }
+  .footer__newsletter-icon {
+    margin-left: 27px;
   }
 }
 .portfolio {
