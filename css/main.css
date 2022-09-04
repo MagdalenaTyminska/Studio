@@ -788,6 +788,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3) inset;
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3) inset;
+  cursor: pointer;
 }
 .footer__newsletter-title {
   font-weight: 700;
