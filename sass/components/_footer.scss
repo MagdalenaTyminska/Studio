@@ -45,16 +45,15 @@
         list-style-type: none;
         display: flex;
         flex-direction: column;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         a:hover {
             color: $color_blue;
             transition: color 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
         a:focus {
             color: $color_blue;
             transition: color 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
 
@@ -97,13 +96,13 @@
         border-radius: 50px;
         fill: $color_white;
         background: $footer_bg_socialmedia;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms;
 
         &:hover,
         &:focus {
             fill: $color_white;
             background-color: $color_blue;
-            transition: color 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3) inset;
             cursor: pointer;
         }

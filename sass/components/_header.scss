@@ -60,13 +60,13 @@
             font-weight: 500;
             line-height: 1.38;
             position: relative;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
             & a:hover,
             & a:focus {
                 color: $color_blue;
                 fill: $color_blue;
                 transition: color 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
         }
 
@@ -99,13 +99,13 @@
             color: $color_grey;
             line-height: 1.71;
             fill: $color_grey;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
             &:hover,
             &:focus {
                 color: $color_blue;
                 fill: $color_blue;
                 transition: color 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
         }
     }
